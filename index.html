@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Text - Clockface Online</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    #logo { color: #FFF; }
+</style>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script>
+    $(function() {
+        $("#header").load("https://www.clockfaceonline.co.uk/clocks/includes/header.php");
+    });
+</script>
+</head>
+<body>
+<div id="header"></div>
+
+<div id="text-clock">
+    <p id="line-1">
+        <span id="it" class="active">IT</span>L<span id="is" class="active">IS</span>AS<span id="tgif">TGIF</span>
+    </p>
+
+    <p id="line-2">
+        AC<span id="quarter" class="desc">QUARTER</span>BS
+    </p>
+
+    <p>
+        <span id="twenty" class="desc">TWENTY</span><span id="five" class="desc">FIVE</span>X
+    </p>
+
+    <p>
+        <span id="half" class="desc">HALF</span>B<span id="ten" class="desc">TEN</span>F<span id="to" class="desc">TO</span>
+    </p>
+
+    <p>
+        <span id="past" class="desc">PAST</span>ERU<span id="nine" class="hr">NINE</span>
+    </p>
+
+    <p>
+        <span id="one" class="hr">ONE</span><span id="six" class="hr">SIX</span><span id="three" class="hr">THREE</span>
+    </p>
+
+    <p id="line-7">
+        <span id="four" class="hr">FOUR</span><span id="five-hr" class="hr">FIVE</span><span id="two" class="hr">TWO</span>
+    </p>
+
+    <p id="line-8">
+        <span id="eight" class="hr">EIGHT</span><span id="eleven" class="hr">ELEVEN</span>
+    </p>
+
+    <p id="line-9">
+        <span id="seven" class="hr">SEVEN</span><span id="twelve" class="hr">TWELVE</span>
+    </p>
+
+    <p id="line-10">
+        <span id="ten-hr" class="hr">TEN</span>SE<span id="oclock" class="desc">OCLOCK</span>
+    </p>
+
+    <p id="line-11">
+        <span id="midnight" class="hr">MIDNIGHT</span>
+    </p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="script.js"></script>
+<script src="https://www.clockfaceonline.co.uk/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="ef1145bb599fd6c45e8e87c1-|49" defer></script>
+<script>
+    (function() {
+        function c() {
+            var b = a.contentDocument || a.contentWindow.document;
+            if (b) {
+                var d = b.createElement('script');
+                d.innerHTML = "window.__CF$cv$params={r:'8a62b4c969cb6544',t:'MTcyMTQ3NTkzOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='https://www.clockfaceonline.co.uk/cdn-cgi/challenge-platform/h/b/scripts/jsd/bbfecc7f1c71/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+                b.getElementsByTagName('head')[0].appendChild(d);
+            }
+        }
+        if (document.body) {
+            var a = document.createElement('iframe');
+            a.height = 1;
+            a.width = 1;
+            a.style.position = 'absolute';
+            a.style.top = 0;
+            a.style.left = 0;
+            a.style.border = 'none';
+            a.style.visibility = 'hidden';
+            document.body.appendChild(a);
+            if ('loading' !== document.readyState) c();
+            else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c);
+            else {
+                var e = document.onreadystatechange || function() {};
+                document.onreadystatechange = function(b) {
+                    e(b);
+                    'loading' !== document.readyState && (document.onreadystatechange = e, c());
+                }
+            }
+        }
+    })();
+</script>
+</body>
+</html>
