@@ -1,3 +1,15 @@
+#logo {
+    color: #FFF;
+    text-align: center;
+    padding: 20px;
+}
+
+#logo img {
+    max-width: 45px; /* Adjust the size of your logo */
+    height: auto;
+}
+
+
 body {
     background: #000;
     color: #fff;

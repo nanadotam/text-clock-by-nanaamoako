@@ -6,3 +6,9 @@
       2. Nude
       3. Cream
       4. ...
+
+## Identified Errors
+- when it is about to hit one o clock:
+  - One doesnt show:   
+    - froontend: "IT IS FIVE TO "/"IT IS TEN TO " instead of "IT IS FIVE TO ONE"/"IT IS TEN TO ONE"
+    - see `Screenshot 1.png`
