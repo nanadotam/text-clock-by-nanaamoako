@@ -21,14 +21,13 @@ body {
 
 p, span {
     color: #333;
-    transition: color .4s ease-out;
-    letter-spacing: 12.1px;
-    font-size: 17px;
+    transition: color .4s ease-out, opacity .4s ease-out;
+    letter-spacing: 14px;
+    font-size: 20px;
 }
 
 #midnight {
-    color: #000;
-    letter-spacing: 23px;
+    letter-spacing: 27px;
 }
 
 #it, #is, span.active {
@@ -37,7 +36,7 @@ p, span {
 }
 
 #text-clock {
-    width: 242px;
+    width: 290px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -47,29 +46,205 @@ p, span {
 }
 
 #line-1, #line-1 span {
-    letter-spacing: 13.9px;
+    letter-spacing: 16px;
 }
 
 #line-2, #line-2 span {
-    letter-spacing: 11.3px;
+    letter-spacing: 13.5px;
 }
 
 #line-7, #line-7 span {
-    letter-spacing: 11.8px;
+    letter-spacing: 14px;
 }
 
 #line-8, #line-8 span {
-    letter-spacing: 12.3px;
+    letter-spacing: 14.5px;
 }
 
 #line-9, #line-9 span {
-    letter-spacing: 11.6px;
+    letter-spacing: 14px;
 }
 
 #line-10, #line-10 span {
-    letter-spacing: 11.6px;
+    letter-spacing: 14px;
 }
 
 .hidden {
     display: none;
+}
+
+/* Theme Classes with improved contrast */
+.theme-dark {
+    background: #000;
+    color: #fff;
+}
+
+.theme-dark p, .theme-dark span {
+    color: #333;
+}
+
+.theme-dark #it, .theme-dark #is, .theme-dark span.active {
+    color: #fff !important;
+}
+
+.theme-light {
+    background: #f5f5f5;
+    color: #000;
+}
+
+.theme-light p, .theme-light span {
+    color: #dddddd; /* Much lighter grey */
+}
+
+.theme-light #it, .theme-light #is, .theme-light span.active {
+    color: #000 !important;
+}
+
+.theme-nude {
+    background: #e6d5c3;
+    color: #2c1810;
+}
+
+.theme-nude p, .theme-nude span {
+    color: #d4c3b5; /* Lighter shade for inactive text */
+}
+
+.theme-nude #it, .theme-nude #is, .theme-nude span.active {
+    color: #2c1810 !important; /* Keep dark brown for active text */
+}
+
+.theme-cream {
+    background: #fff5e6;
+    color: #2c1810;
+}
+
+.theme-cream p, .theme-cream span {
+    color: #d8ccc4; /* Lighter shade for inactive text */
+}
+
+.theme-cream #it, .theme-cream #is, .theme-cream span.active {
+    color: #2c1810 !important; /* Keep dark brown for active text */
+}
+
+/* Theme Toggle Button Styles */
+#theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: auto;
+}
+
+#theme-button {
+    padding: 12px 24px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-family: Helvetica, Arial;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+#theme-button:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Update theme-specific styles */
+.theme-dark #midnight {
+    color: #333 !important; /* Same as other inactive text */
+}
+
+.theme-dark #midnight.active {
+    color: #fff !important;
+}
+
+.theme-light #midnight {
+    color: #dddddd !important;
+}
+
+.theme-light #midnight.active {
+    color: #000 !important;
+}
+
+.theme-nude #midnight {
+    color: #d4c3b5 !important;
+}
+
+.theme-nude #midnight.active {
+    color: #2c1810 !important;
+}
+
+.theme-cream #midnight {
+    color: #d8ccc4 !important;
+}
+
+.theme-cream #midnight.active {
+    color: #2c1810 !important;
+}
+
+/* Mobile Responsive Design */
+@media screen and (max-width: 430px) {
+    p, span {
+        font-size: 40px;
+        letter-spacing: 24px;
+    }
+
+    #text-clock {
+        width: 420px;
+        transform: translate(-50%, -50%) scale(0.75);
+        margin-top: -40px;
+    }
+
+    #line-1, #line-1 span {
+        letter-spacing: 26px;
+    }
+
+    #line-2, #line-2 span {
+        letter-spacing: 23px;
+    }
+
+    #line-7, #line-7 span,
+    #line-8, #line-8 span,
+    #line-9, #line-9 span,
+    #line-10, #line-10 span {
+        letter-spacing: 24px;
+    }
+
+    #midnight {
+        letter-spacing: 38px;
+        font-size: 40px;
+    }
+
+    /* Adjust logo size */
+    #logo img {
+        max-width: 65px;
+    }
+
+    /* Larger button for mobile */
+    #theme-button {
+        padding: 22px 44px;
+        font-size: 22px;
+        letter-spacing: 4.5px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Larger mobile devices and small tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    p, span {
+        font-size: 22px;
+        letter-spacing: 15px;
+    }
+
+    #text-clock {
+        width: 320px;
+    }
+
+    #midnight {
+        letter-spacing: 28px;
+    }
 }
