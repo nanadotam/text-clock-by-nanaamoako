@@ -16,7 +16,7 @@ body {
     font-family: Helvetica, Arial;
     text-align: justify;
     pointer-events: none;
-    -webkit-user-select: none;
+    /* -webkit-user-select: none; */
 }
 
 p, span {
@@ -188,48 +188,40 @@ p, span {
 
 /* Mobile Responsive Design */
 @media screen and (max-width: 430px) {
-    p, span {
-        font-size: 40px;
-        letter-spacing: 24px;
+    #text-clock {
+        width: 320px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 
-    #text-clock {
-        width: 420px;
-        transform: translate(-50%, -50%) scale(0.75);
-        margin-top: -40px;
+    p, span {
+        font-size: 20px;
+        letter-spacing: 14px;
     }
 
     #line-1, #line-1 span {
-        letter-spacing: 26px;
+        letter-spacing: 16px;
     }
 
     #line-2, #line-2 span {
-        letter-spacing: 23px;
-    }
-
-    #line-7, #line-7 span,
-    #line-8, #line-8 span,
-    #line-9, #line-9 span,
-    #line-10, #line-10 span {
-        letter-spacing: 24px;
+        letter-spacing: 13.5px;
     }
 
     #midnight {
-        letter-spacing: 38px;
-        font-size: 40px;
+        letter-spacing: 27px;
     }
 
     /* Adjust logo size */
     #logo img {
-        max-width: 65px;
+        max-width: 45px;
     }
 
-    /* Larger button for mobile */
+    /* Mobile-friendly button */
     #theme-button {
-        padding: 22px 44px;
-        font-size: 22px;
-        letter-spacing: 4.5px;
-        margin-bottom: 20px;
+        padding: 15px 30px;
+        font-size: 16px;
     }
 }
 

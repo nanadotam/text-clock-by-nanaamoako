@@ -156,3 +156,4 @@ document.addEventListener('DOMContentLoaded', initializeTheme);
 
 // Add click event listener to button
 document.getElementById('theme-button').addEventListener('click', switchTheme);
+
